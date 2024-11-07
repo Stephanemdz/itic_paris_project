@@ -1,4 +1,5 @@
 <?php
+    include_once __DIR__.'/controller/baseController.php';
     include_once __DIR__.'/model/config.php';
     include_once __DIR__.'/model/model.php';
 ?>
@@ -8,6 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DATABASE ITIC PROJECT</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
@@ -33,7 +35,7 @@
                 <thead>
                     <tr>
                         <th>Numero de mision</th>
-                        <th>titre</th>
+                        <th>titre de la mission </th>
                         <th>description</th>
                     </tr>
                     </thead>
@@ -52,48 +54,6 @@
                 <?php   endforeach;?>
             </table>
         </section>
-        <!-- <table> -->
-            <!-- <caption>
-                <h2>Classement des langages</h2>
-            </caption>
-            <thead>
-                <tr>
-                    <th>item</th>
-                    <th>item</th>
-                    <th>item</th>
-                    <th>item</th>
-                </tr>
-                
-            </thead>
-    
-            <tbody>
-                <tr>
-                    <td>content</td>
-                    <td>content</td>
-                    <td>content</td>
-                    <td>content</td>
-                </tr>
-                <tr>
-                    <td>content</td>
-                    <td>content</td>
-                    <td>content</td>
-                    <td>content</td>
-                </tr>
-                <tr>
-                    <td>content</td>
-                    <td>content</td>
-                    <td>content</td>
-                    <td>content</td>
-                </tr>
-                <tr>
-                    <td>content</td>
-                    <td>content</td>
-                    <td>content</td>
-                    <td>content</td>
-                </tr>
-                
-            </tbody>
-        </table> -->
     </main>
 </body>
 </html>
