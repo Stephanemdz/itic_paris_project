@@ -1,11 +1,16 @@
+<?php
+    include_once __DIR__.'/controller/baseController.php';
+    include_once __DIR__.'/model/config.php';
+    include_once __DIR__.'/model/model.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../favicon/base-de-donnees.png">
     <title>DATABASE ITIC PROJECT</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./favicon/base-de-donnees.png">
 </head>
 <body>
     <header>
@@ -14,15 +19,15 @@
         </h1>
         <nav>
             <ul>
-                <li><a href="acceuil.html">Acceuil</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="sign.html">Sign up</a></li>
+                <li><a href="acceuil.php">Acceuil</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="sign.php">Sign up</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Bienvenue sur la base de données ITIC PARIS</h2>
-        <fieldset>
+    <h2>Bienvenue sur la base de données ITIC PARIS</h2>
+    <fieldset>
             <legend>Connexion</legend>
             <form method="post" action="traitement_base_de_données">   
                 <label for="Email">Email:</label>

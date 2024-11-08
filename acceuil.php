@@ -10,12 +10,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DATABASE ITIC PROJECT</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./favicon/base-de-donnees.png">
+    
 </head>
 <body>
     <header>
         <h1>
             DATABASE ITIC PARIS
         </h1>
+        <nav>
+            <ul>
+                <li><a href="acceuil.php">Acceuil</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="sign.php">Sign up</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="acceuil">
