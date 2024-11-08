@@ -35,7 +35,7 @@
                 <label for="password">Password :</label> 
                 <input type="password" id="password" name="password" required>
             </form>
-        </fieldset>
+    </fieldset>
     </main>
 </body>
 </html>

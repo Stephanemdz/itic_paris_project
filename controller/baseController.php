@@ -1,5 +1,4 @@
 <?php
     require_once './model/model.php';
-    $mission = myMission($connexion);
-    
+    $mission = myMission($connexion); 
     ?>
