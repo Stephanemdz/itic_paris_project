@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DATABASE ITIC PROJECT</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./favicon/base-de-donnees.png">
+    <link rel="icon" href="./favicon/togo.png">
 </head>
 <body>
     <header>
@@ -34,8 +34,10 @@
                 <input type="email" id="Email" name="Email" required>   
                 <label for="password">Password :</label> 
                 <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Se connecter</button>
             </form>
-    </fieldset>
+        </fieldset>
     </main>
 </body>
 </html>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DATABASE ITIC PROJECT</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./favicon/base-de-donnees.png">
+    <link rel="icon" href="./favicon/togo.png">
     
 </head>
 <body>
