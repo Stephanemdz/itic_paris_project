@@ -1,8 +1,8 @@
 <?php
     // Grâce  a ça on va se connecter a la base de données. 
 $servername = 'localhost';
-$username = 'root';
 $dbname = 'itic_paris';
+$username = 'root';
 $password = '';
 
 try {

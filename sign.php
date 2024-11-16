@@ -3,6 +3,26 @@
     include_once __DIR__.'/model/config.php';
     include_once __DIR__.'/model/model.php';
 ?>
+<?php
+    $connexion = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password); 
+        if(!empty($_POST['email']) AND !empty($_POST['password'])){
+            $firstname = htmlspecialchars($_POST['firstname']);
+            $lastname = htmlspecialchars($_POST['lastname']);
+            $birthdate = htmlspecialchars($_POST['birthdate']);
+            $email = htmlspecialchars($_POST['email']);
+            $password = sha1($_POST['password']);
+            
+     
+           $requete = $connexion->prepare('INSERT INTO user (firstname, lastname, birthdate, email, password) VALUES (?,?,?,?,?)');
+           $requete->execute(array($firstname, $lastname, $birthdate, $email, $password));
+            // $requete->debugDumpParams();
+           if($requete->rowCount() == 1){
+            die("Félicitations, bien venu parmi nous petit monstre coquin...");
+           }else{
+            echo "Bouge toi un peu le cul la soit plus précis.....";
+           }
+        }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,19 +49,19 @@
     <h2>Bienvenue sur la base de données ITIC PARIS</h2>
     <fieldset>
             <legend>Inscription</legend>
-            <form method="post" action="traitement_base_de_données">
+            <form method="post" action="">
                 <label for="firstname">firstname:</label>
-                <input type="text" id="firstname" name="firstname" required>    
+                <input type="text" id="firstname" name="firstname" autocomplete="off" required>    
                 <label for="lastname">lastname:</label>
-                <input type="text" id="lastname" name="lastname" required>    
-                <label for="Birthdate">Birthdate:</label>
-                <input type="date" id="Birthdate" name="date" required>    
-                <label for="Email">Email:</label>
-                <input type="email" id="Email" name="Email" required>   
+                <input type="text" id="lastname" name="lastname" autocomplete="off" required>    
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" autocomplete="off" required>    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" autocomplete="off" required>   
                 <label for="password">Password :</label> 
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" autocomplete="off" required>
 
-                <button type="submit">Se connecter</button>
+                <button type="submit">S'inscrire</button>
             </form>
         </fieldset>
     </main>
