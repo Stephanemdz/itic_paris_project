@@ -16,7 +16,7 @@
            $requete = $connexion->prepare('INSERT INTO user (firstname, lastname, birthdate, email, password) VALUES (?,?,?,?,?)');
            $requete->execute(array($firstname, $lastname, $birthdate, $email, $password));
             // $requete->debugDumpParams();
-           if($requete->rowCount() == 1){
+           if($requete->rowCount() > 0){
             die("Félicitations, bien venu parmi nous petit monstre coquin...");
            }else{
             echo "Bouge toi un peu le cul la soit plus précis.....";
