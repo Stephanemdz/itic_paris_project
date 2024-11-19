@@ -3,6 +3,12 @@
     include_once __DIR__.'/model/config.php';
     include_once __DIR__.'/model/model.php';
 ?>
+
+<?php
+// echo $_SESSION['userid'];
+var_dump($_SESSION['userid']);
+
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

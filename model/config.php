@@ -14,4 +14,6 @@ try {
   catch (PDOException $e) {
     die("Connection impossible : " . $e->getMessage());
  }
+
+ session_start();
  
