@@ -4,6 +4,7 @@
     include_once __DIR__.'/model/model.php';
 ?>
 <?php
+session_start();
     $connexion = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password); 
         if(!empty($_POST['email']) AND !empty($_POST['password'])){
            $email = htmlspecialchars($_POST['email']);
@@ -14,7 +15,11 @@
         // var_dump($requete);
         // $requete->debugDumpParams();
            if($requete->rowCount() == 1){
-            die("T'es de retour sale petit traitre coquin....");
+               $_SESSION['email'] = $email;
+               $_SESSION['password'] = $password;
+               $_SESSION['id'] = $requete -> fetch()['id'];
+                header('location:user.php');
+            // die("T'es de retour sale petit traitre coquin....");
            }else{
             echo "Heee toi là caurryge ton maut de pas ou ton mail. Et je voeux rien antendre si jè mal écrit l'erruer que c'ai sansé t'anvoillé, je sui just antrein de fèr com toi....";
            }
