@@ -6,7 +6,7 @@
 
 <?php
 // echo $_SESSION['userid'];
-var_dump($_SESSION['userid']);
+// var_dump($_SESSION['userid']);
 
  ?>
 <!DOCTYPE html>
