@@ -39,7 +39,7 @@
         </h1>
         <nav>
             <ul>
-                <li><a href="acceuil.php">Acceuil</a></li>
+                <li><a href="index.php">Acceuil</a></li>
                 <li><a href="login.php">Login</a></li>
                 <li><a href="sign.php">Sign up</a></li>
             </ul>
