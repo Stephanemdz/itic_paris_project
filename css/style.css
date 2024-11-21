@@ -1,14 +1,21 @@
+@import url(reset.css);
 body{
+    color: white;
     text-align: center;
+    background-image: url(../asset/NETWORK\ img\ by\ PIXABAY.jpg) ;
+    background-size: cover;
 }
-nav ul {
-    display: flex;
-    justify-content: space-around;
+table {
+    background-color: black;
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse; /* Pour un affichage plus propre des bordures */
 }
-li{
-    list-style: none;
+th, td {
+    border: 1px solid black;
+    padding: 15px;
 }
-a{
-    text-decoration: none;
-    color: black;
+.deconnex{
+    justify-content: end;
 }
+

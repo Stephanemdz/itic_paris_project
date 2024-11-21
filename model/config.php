@@ -1,4 +1,5 @@
 <?php
+session_start();
     // Grâce  a ça on va se connecter a la base de données. 
 $servername = 'localhost';
 $dbname = 'itic_paris';
@@ -15,5 +16,4 @@ try {
     die("Connection impossible : " . $e->getMessage());
  }
 
- session_start();
  

@@ -6,12 +6,12 @@
 
 <?php
 // echo $_SESSION['userid'];
-// var_dump($_SESSION['userid']);
+var_dump($_SESSION['userid']);
 
  ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>      
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DATABASE ITIC PROJECT</title>
@@ -48,12 +48,12 @@
             </h2>
             <table>
                 <thead>
-                    <tr>
-                        <th>Numero de mision</th>
-                        <th>titre de la mission </th>
-                        <th>description</th>
-                    </tr>
-                    </thead>
+                <tr>
+                    <th>Numero</th>
+                    <th>titre de la mission</th>
+                    <th>description</th>
+                </tr>
+                </thead>
                     <?php
                 $top10 = myMission($connexion);
                 foreach($mission as $column):?>
@@ -68,6 +68,9 @@
                 </tbody>
                 <?php   endforeach;?>
             </table>
+        </section>
+        <section class="deconnex">
+            <a href="logout.php">Se deconnecter</a>
         </section>
     </main>
 </body>
