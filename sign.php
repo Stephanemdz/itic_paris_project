@@ -50,18 +50,18 @@
     <fieldset>
             <legend>Inscription</legend>
             <form method="post" action="">
-                <label for="firstname">firstname:</label>
-                <input type="text" id="firstname" name="firstname" autocomplete="off" required>    
-                <label for="lastname">lastname:</label>
-                <input type="text" id="lastname" name="lastname" autocomplete="off" required>    
-                <label for="birthdate">Birthdate:</label>
-                <input type="date" id="birthdate" name="birthdate" autocomplete="off" required>    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" autocomplete="off" required>   
-                <label for="password">Password :</label> 
-                <input type="password" id="password" name="password" autocomplete="off" required>
+                <label for="firstname">firstname:</label><br>
+                <input type="text" id="firstname" name="firstname" autocomplete="off" required>   <br> 
+                <label for="lastname">lastname:</label><br>
+                <input type="text" id="lastname" name="lastname" autocomplete="off" required>    <br>
+                <label for="birthdate">Birthdate:</label><br>
+                <input type="date" id="birthdate" name="birthdate" autocomplete="off" required> <br>   
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" autocomplete="off" required>   <br>
+                <label for="password">Password :</label> <br>
+                <input type="password" id="password" name="password" autocomplete="off" required> <br>
 
-                <button type="submit">S'inscrire</button>
+                <input type="submit" name ="envoi">
             </form>
         </fieldset>
     </main>

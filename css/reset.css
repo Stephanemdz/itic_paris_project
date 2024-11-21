@@ -35,7 +35,9 @@ html {
   }
   a {
     color: white;
-    text-decoration: none;
+    text-decoration: none;  
+    background-color: black;
+    
   }
   * {
     box-sizing: border-box;
@@ -50,7 +52,7 @@ html {
     border:0 ;
   }
   input {
-    width: 10%;
+    width: 30%;
   }
   button {
     background: none;

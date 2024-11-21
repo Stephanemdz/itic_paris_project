@@ -15,7 +15,15 @@ th, td {
     border: 1px solid black;
     padding: 15px;
 }
-.deconnex{
-    justify-content: end;
+li{
+    background-color: black;
+    border-radius: 60%;
+    width: 6%;
 }
+fieldset{
+    margin: 0 auto;
+    background-color: black;
+    width: 30%;
+}
+
 
