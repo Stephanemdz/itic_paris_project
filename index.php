@@ -6,7 +6,7 @@
 
 <?php
 // echo $_SESSION['userid'];
-var_dump($_SESSION['userid']);
+// var_dump($_SESSION['userid']);
 
  ?>
 <!DOCTYPE html>
@@ -26,7 +26,7 @@ var_dump($_SESSION['userid']);
         </h1>
         <nav>
             <ul>
-                <li><a href="index.php">Acceuil</a></li>
+                <li><a href="index.php">Accueil</a></li>
                 <li><a href="login.php">Login</a></li>
                 <li><a href="sign.php">Sign up</a></li>
             </ul>
