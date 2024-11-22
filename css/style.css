@@ -9,10 +9,10 @@ table {
     background-color: #3D5467;
     margin: 0 auto;
     width: 80%;
-    border-collapse: collapse; /* Pour un affichage plus propre des bordures */
+    border-collapse: collapse; 
 }
 th, td {
-    border: 1px solid #3D5467;
+    border: 1px solid darkgray;
     padding: 15px;
 }
 li{

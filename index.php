@@ -2,9 +2,6 @@
     include_once __DIR__.'/controller/baseController.php';
     include_once __DIR__.'/model/config.php';
     include_once __DIR__.'/model/model.php';
-?>
-
-<?php
 // echo $_SESSION['userid'];
 // var_dump($_SESSION['userid']);
 
@@ -25,11 +22,11 @@
             DATABASE ITIC PARIS
         </h1>
         <nav>
-            <ul>
-                <li><a href="index.php">Accueil</a></li>
-                <li><a href="login.php">Login</a></li>
-                <li><a href="sign.php">Sign up</a></li>
-            </ul>
+            
+                <a href="index.php">Accueil</a>
+                <a href="login.php">Login</a>
+                <a href="sign.php">Sign up</a>
+            
         </nav>
     </header>
     <main>

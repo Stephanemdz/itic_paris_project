@@ -38,11 +38,11 @@
             DATABASE ITIC PARIS
         </h1>
         <nav>
-            <ul>
-                <li><a href="index.php">Accueil</a></li>
-                <li><a href="login.php">Login</a></li>
-                <li><a href="sign.php">Sign up</a></li>
-            </ul>
+            
+                <a href="index.php">Accueil</a>
+                <a href="login.php">Login</a>
+                <a href="sign.php">Sign up</a>
+            
         </nav>
     </header>
     <main>
