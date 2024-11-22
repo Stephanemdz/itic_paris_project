@@ -22,11 +22,9 @@
             DATABASE ITIC PARIS
         </h1>
         <nav>
-            
-                <a href="index.php">Accueil</a>
-                <a href="login.php">Login</a>
-                <a href="sign.php">Sign up</a>
-            
+            <a href="index.php">Accueil</a>
+            <a href="login.php">Login</a>
+            <a href="sign.php">Sign up</a>
         </nav>
     </header>
     <main>
@@ -45,18 +43,18 @@
             </h2>
             <table>
                 <thead>
-                <tr>
-                    <th>Numero</th>
-                    <th>titre de la mission</th>
-                    <th>description</th>
-                </tr>
+                    <tr>
+                        <th>Numero</th>
+                        <th>titre de la mission</th>
+                        <th>description</th>
+                    </tr>
                 </thead>
-                    <?php
+                <?php
                 $top10 = myMission($connexion);
                 foreach($mission as $column):?>
                 <tbody>
                     <tr>
-                    <?=
+                        <?=
                     "<td>".($column['id_mission'])."</td>
                     <td>".($column['title'])."</td>
                     <td>".($column['description'])."</td>"
@@ -66,9 +64,8 @@
                 <?php   endforeach;?>
             </table>
         </section>
-        <section class="deconnex">
-            <a href="logout.php">Se deconnecter</a>
-        </section>
+        <a href="logout.php">Se deconnecter</a>
+        
     </main>
 </body>
 </html>
