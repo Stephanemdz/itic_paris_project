@@ -5,11 +5,13 @@ $servername = 'localhost';
 $dbname = 'itic_paris';
 $username = 'root';
 $password = '';
-
+$PDO = null;
+$user = null;
 try {
-    $connexion = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $connexion->exec("set names utf8");
+    $PDO = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $PDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $PDO->exec("set names utf8");
+
     
  }
   catch (PDOException $e) {

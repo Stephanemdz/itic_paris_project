@@ -4,22 +4,15 @@
     include_once __DIR__.'/model/model.php';
 ?>
 <?php
-    $connexion = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password); 
         if(!empty($_POST['email']) AND !empty($_POST['password'])){
            $email = htmlspecialchars($_POST['email']);
            $password = sha1($_POST['password']);
      
-           $requete = $connexion->prepare('SELECT * FROM user WHERE email = ? AND password = ?');
+           $requete = $PDO->prepare('SELECT * FROM user WHERE email = ? AND password = ?');
            $requete->execute(array($email, $password));
         // var_dump($requete);
         // $requete->debugDumpParams();
-           if($requete->rowCount() == 1){
-               $_SESSION['userid'] = $requete -> fetch()['id_user'];
-                header('location:user.php');
-            // die("T'es de retour sale petit traitre coquin....");
-           }else{
-            echo "Heee toi là caurryge ton maut de pas ou ton mail. Et je voeux rien antendre si jè mal écrit l'erruer que c'ai sansé t'anvoillé, je sui just antrein de fèr com toi....";
-           }
+           include_once __DIR__.'/model/verify.php';
         }
       ?>
 <!DOCTYPE html>

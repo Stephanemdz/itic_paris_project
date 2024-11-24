@@ -3,8 +3,7 @@
     include_once __DIR__.'/model/config.php';
     include_once __DIR__.'/model/model.php';
 ?>
-<?php
-    $connexion = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password); 
+<?php 
         if(!empty($_POST['email']) AND !empty($_POST['password'])){
             $firstname = htmlspecialchars($_POST['firstname']);
             $lastname = htmlspecialchars($_POST['lastname']);
@@ -13,7 +12,7 @@
             $password = sha1($_POST['password']);
             
      
-           $requete = $connexion->prepare('INSERT INTO user (firstname, lastname, birthdate, email, password) VALUES (?,?,?,?,?)');
+           $requete = $PDO->prepare('INSERT INTO user (firstname, lastname, birthdate, email, password) VALUES (?,?,?,?,?)');
            $requete->execute(array($firstname, $lastname, $birthdate, $email, $password));
             // $requete->debugDumpParams();
            if($requete->rowCount() > 0){

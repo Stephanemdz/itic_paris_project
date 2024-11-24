@@ -2,6 +2,7 @@
     include_once __DIR__.'/controller/baseController.php';
     include_once __DIR__.'/model/config.php';
     include_once __DIR__.'/model/model.php';
+    include_once __DIR__.'/model/verify.php';
 // echo $_SESSION['userid'];
 // var_dump($_SESSION['userid']);
 
@@ -22,9 +23,13 @@
             DATABASE ITIC PARIS
         </h1>
         <nav>
-            <a href="index.php">Accueil</a>
-            <a href="login.php">Login</a>
-            <a href="sign.php">Sign up</a>
+        <a href="index.php">Accueil</a>
+        <?php if(isset($user)):?>
+        <a href="logout.php">Se deconnecter</a>
+        <?php else :?>
+        <a href="login.php">Login</a>
+        <a href="sign.php">Sign up</a>
+        <?php endif;?>
         </nav>
     </header>
     <main>
@@ -50,7 +55,7 @@
                     </tr>
                 </thead>
                 <?php
-                $top10 = myMission($connexion);
+                $top10 = myMission($PDO);
                 foreach($mission as $column):?>
                 <tbody>
                     <tr>
@@ -64,8 +69,8 @@
                 <?php   endforeach;?>
             </table>
         </section>
-        <a href="logout.php">Se deconnecter</a>
-        
+        <?php
+        include_once __DIR__.'/model/verify.php';?>
     </main>
 </body>
 </html>
